@@ -4,7 +4,10 @@ This project focuses on building a deep learning model to detect and classify va
 
 ## 📁 Project Structure
 
-skin-diseaese-prediction/ │ ├── skin-diseaese-prediction.ipynb # Jupyter notebook with the full project pipeline ├── README.md # Project documentation └── dataset/ # Folder containing image data (not included here)
+skin-diseaese-prediction/ 
+              ├── skin-diseaese-prediction.ipynb # Jupyter notebook with the full project pipeline
+              ├── README.md # Project documentation 
+              └── dataset/ # Folder containing image data (not included here)
 
 
 ## 🚀 Features
@@ -25,14 +28,6 @@ skin-diseaese-prediction/ │ ├── skin-diseaese-prediction.ipynb # Jupyter
 
 Make sure the following libraries are installed:
 
-```bash
-pip install numpy pandas matplotlib seaborn tensorflow keras scikit-learn opencv-python
-🛠️ How to Run
-Clone the repository:
-
-bash
-Copy
-Edit
 git clone https://github.com/your-username/skin-disease-prediction.git
 cd skin-disease-prediction
 Place the dataset in the dataset/ folder.
@@ -41,14 +36,6 @@ Open and run skin-diseaese-prediction.ipynb in Jupyter Notebook or Google Colab.
 
 Train the model and evaluate the predictions.
 
-📊 Results
-Training Accuracy: ~XX%
-
-Validation Accuracy: ~XX%
-
-Model Loss: Minimal, stable across epochs
-
-Includes confusion matrix and correctly predicted image samples
 
 🧪 Dataset Info
 ⚠️ The dataset is not included in this repository due to size/privacy constraints. You may use publicly available datasets like:
