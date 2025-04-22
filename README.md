@@ -1,68 +1,74 @@
-# 🧬 Skin Disease Prediction Using Deep Learning
+#🧬 Skin Disease Prediction using Deep Learning
+This project presents a Deep Learning-based approach for predicting various types of skin diseases from images. The model is trained on a labeled dataset of skin disease images and utilizes Convolutional Neural Networks (CNNs) for accurate classification.
 
-This project focuses on building a deep learning model to detect and classify various skin diseases from image data. Early detection and accurate classification of skin diseases is critical for patient care, and this tool aims to assist medical professionals by providing a reliable, AI-powered prediction system.
+##🧠 About the Project
+Skin diseases can often be identified through visual patterns. This project aims to assist dermatologists or users by predicting the disease type from an image using a trained CNN model. The model classifies images into multiple categories of skin diseases with a decent accuracy rate.
 
-## 📁 Project Structure
+##📁 Dataset
+The dataset contains images categorized into different classes of skin diseases.
 
-skin-diseaese-prediction/ 
-              ├── skin-diseaese-prediction.ipynb # Jupyter notebook with the full project pipeline
-              ├── README.md # Project documentation 
-              └── dataset/ # Folder containing image data (not included here)
+##Preprocessing includes:
 
+Image resizing to 180x180
 
-## 🚀 Features
+Normalization
 
-- Image preprocessing and data augmentation
-- CNN-based deep learning model for skin disease classification
-- Model evaluation using metrics like accuracy, precision, recall
-- Confusion matrix and visualization of predictions
-- Easily extendable for more classes and real-world datasets
+Splitting into training and validation sets (80-20 split)
 
-## 🔍 Algorithms Used
+Note: You can use publicly available skin disease datasets such as HAM10000 or your own dataset.
 
-- **Convolutional Neural Network (CNN)**: Deep learning architecture specialized in image classification.
-- **Image Data Augmentation**: Improves generalization by creating variations of input data.
-- **Softmax Activation**: For multi-class classification.
+##🛠️ Technologies Used
+Python
 
-## 📦 Dependencies
+TensorFlow & Keras
 
-Make sure the following libraries are installed:
+NumPy
+
+Pandas
+
+Matplotlib
+
+scikit-learn
+
+##⚙️ Installation
+Clone the repository:
 
 git clone https://github.com/your-username/skin-disease-prediction.git
 cd skin-disease-prediction
-Place the dataset in the dataset/ folder.
+Install dependencies: pip install -r requirements.txt
+🚀 How to Run
+jupyter notebook skin-diseaese-prediction.ipynb
+Or convert it to a .py file and run:
+python skin-diseaese-prediction.py
+##🧱 Model Architecture
+Convolutional Layers: 3 Conv2D layers with ReLU activation
 
-Open and run skin-diseaese-prediction.ipynb in Jupyter Notebook or Google Colab.
+Pooling Layers: MaxPooling2D layers
 
-Train the model and evaluate the predictions.
+Dense Layers: Fully connected layers with dropout for regularization
 
+Output Layer: Softmax activation for multi-class classification
 
-🧪 Dataset Info
-⚠️ The dataset is not included in this repository due to size/privacy constraints. You may use publicly available datasets like:
+##📊 Results
+Accuracy: Achieved over 80% accuracy on the validation set.
 
-HAM10000
+Loss & Accuracy Plots: Available in the notebook
 
-DermNet
+Model Evaluation: Includes classification report and confusion matrix
 
-Custom skin disease image dataset
+##📁 Project Structure
+skin-disease-prediction/
+│
+├── skin-diseaese-prediction.ipynb
+├── dataset/
+│   ├── class1/
+│   └── ...
+├── saved_model/          # Trained models
+├── plots/                # Accuracy & loss plots
+└── README.md
 
-📈 Future Improvements
-Integrate with a Flask/Django web app
+##👩‍💻 Contributors
+Deepika – [Your GitHub Profile or Email]
 
-Use transfer learning (ResNet, EfficientNet)
-
-Mobile deployment using TensorFlow Lite
-
-Include more skin disease classes
-
-🤝 Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-🙋‍♀️ Developed By
-Deepika
-3rd Year B.Tech - AI & Data Science
-Sri Shakthi Institute of Engineering and Technology
-
+##📝 License
+This project is open-source and available under the MIT License.
